@@ -9,7 +9,7 @@ const AddTodo = () => {
     
     function handleSubmit(e) {
         e.preventDefault();
-        setTasks(dispatch(addTodo({task: tasks, id: cuid()})));
+        dispatch(addTodo({task: tasks, id: cuid()}));
         e.target.userInput.value = '';
     }
 
