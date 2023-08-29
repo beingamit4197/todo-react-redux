@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
     <h1>ToDo Application</h1>
+    {/* <h2></h2> */}
     <div class="card">
         <div class="tools">
           <div class="circle">

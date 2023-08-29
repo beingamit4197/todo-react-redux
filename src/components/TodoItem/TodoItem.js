@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react'
 import { useDispatch } from 'react-redux'
 import { deleteTodo, updateTodo } from '../../actions'
+import './TodoItem.css';
 
 const TodoItem = ({task}) => {
   const [isUpdate, setIsUpdate] = useState(false)
@@ -25,7 +26,7 @@ const TodoItem = ({task}) => {
 
   const renderItem = () => {
     return (
-      <div>
+      <div className='updated-todo'>
         {task.task}
         <button onClick={() => setIsUpdate(true)} >Edit</button>
         <button onClick={ () => dispatch(deleteTodo(task.id))}>Delete</button>

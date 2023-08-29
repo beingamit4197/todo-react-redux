@@ -18,7 +18,7 @@ const AddTodo = () => {
     }
   return (
     <form onSubmit={handleSubmit}>
-        <input placeholder='Enter your todos' type='text' name='userInput' onChange={ (e) => handleChange(e)}/>
+        <input placeholder='enter your todos' type='text' name='userInput' onChange={ (e) => handleChange(e)}/>
         <button type='submit'>Create</button>
     </form>
   )
